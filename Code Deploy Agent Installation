@@ -1,0 +1,8 @@
+apt install ruby
+apt install wget
+cd /home/ubuntu
+wget https://aws-codedeploy-eu-central-1.s3.amazonaws.com/latest/install;
+chmod +x ./install
+sudo ./install auto
+service codedeploy-agent start
+service codedeploy-agent status
